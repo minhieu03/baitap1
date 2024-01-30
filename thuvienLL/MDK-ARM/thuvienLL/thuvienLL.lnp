@@ -1,0 +1,15 @@
+--cpu Cortex-M3
+"thuvienll\startup_stm32f103xb.o"
+"thuvienll\main.o"
+"thuvienll\gpio.o"
+"thuvienll\stm32f1xx_it.o"
+"thuvienll\system_stm32f1xx.o"
+"thuvienll\stm32f1xx_ll_gpio.o"
+"thuvienll\stm32f1xx_ll_pwr.o"
+"thuvienll\stm32f1xx_ll_exti.o"
+"thuvienll\stm32f1xx_ll_rcc.o"
+"thuvienll\stm32f1xx_ll_utils.o"
+--strict --scatter "thuvienLL\thuvienLL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "thuvienLL.map" -o thuvienLL\thuvienLL.axf
